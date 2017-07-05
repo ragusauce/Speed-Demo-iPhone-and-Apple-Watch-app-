@@ -224,16 +224,31 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 59PPGDL29B;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					709CA29F1F041ACF0068086C = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 59PPGDL29B;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.app = {
+								enabled = 1;
+							};
+						};
 					};
 					709CA2AE1F041ACF0068086C = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 59PPGDL29B;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -557,6 +572,7 @@
 				709CA2BF1F041ACF0068086C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		709CA2C11F041ACF0068086C /* Build configuration list for PBXNativeTarget "Speed Demo WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -565,6 +581,7 @@
 				709CA2C31F041ACF0068086C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		709CA2C51F041ACF0068086C /* Build configuration list for PBXNativeTarget "Speed Demo" */ = {
 			isa = XCConfigurationList;
@@ -573,6 +590,7 @@
 				709CA2C71F041ACF0068086C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

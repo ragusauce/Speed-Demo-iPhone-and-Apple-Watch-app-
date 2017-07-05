@@ -5,6 +5,36 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "709CA29F1F041ACF0068086C"
+               BuildableName = "Speed Demo WatchKit App.app"
+               BlueprintName = "Speed Demo WatchKit App"
+               ReferencedContainer = "container:Speed Demo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "709CA28D1F041ACF0068086C"
+               BuildableName = "Speed Demo.app"
+               BlueprintName = "Speed Demo"
+               ReferencedContainer = "container:Speed Demo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -13,6 +43,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "709CA29F1F041ACF0068086C"
+            BuildableName = "Speed Demo WatchKit App.app"
+            BlueprintName = "Speed Demo WatchKit App"
+            ReferencedContainer = "container:Speed Demo.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +65,27 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/Speed Demo WatchKit App">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "709CA29F1F041ACF0068086C"
+            BuildableName = "Speed Demo WatchKit App.app"
+            BlueprintName = "Speed Demo WatchKit App"
+            ReferencedContainer = "container:Speed Demo.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "709CA29F1F041ACF0068086C"
+            BuildableName = "Speed Demo WatchKit App.app"
+            BlueprintName = "Speed Demo WatchKit App"
+            ReferencedContainer = "container:Speed Demo.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +95,27 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/Speed Demo WatchKit App">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "709CA29F1F041ACF0068086C"
+            BuildableName = "Speed Demo WatchKit App.app"
+            BlueprintName = "Speed Demo WatchKit App"
+            ReferencedContainer = "container:Speed Demo.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "709CA29F1F041ACF0068086C"
+            BuildableName = "Speed Demo WatchKit App.app"
+            BlueprintName = "Speed Demo WatchKit App"
+            ReferencedContainer = "container:Speed Demo.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Speed_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,61 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watch's speed will be displayed here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWk-Dh-pgj">
+                                <rect key="frame" x="54" y="324" width="267" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watch is currently not tracking speed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fT3-4s-toP">
+                                <rect key="frame" x="18" y="153" width="339" height="23"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="svn-hL-s0y">
+                                <rect key="frame" x="94" y="485" width="187" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeAlertSpeed:" destination="BYZ-38-t0r" eventType="valueChanged" id="4v6-Y0-phk"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alert Speed: 10 m/sec" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Wj-2K-DoA">
+                                <rect key="frame" x="112" y="459" width="151" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="svn-hL-s0y" firstAttribute="top" secondItem="8Wj-2K-DoA" secondAttribute="bottom" constant="8" symbolic="YES" id="6Bj-ZY-pi2"/>
+                            <constraint firstItem="yWk-Dh-pgj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8QH-1o-TBi"/>
+                            <constraint firstItem="fT3-4s-toP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="133" id="8qf-ey-x5s"/>
+                            <constraint firstItem="8Wj-2K-DoA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ELE-Lc-Pnn"/>
+                            <constraint firstItem="svn-hL-s0y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="IFE-Xa-22L"/>
+                            <constraint firstItem="svn-hL-s0y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J7N-bc-in3"/>
+                            <constraint firstItem="svn-hL-s0y" firstAttribute="centerX" secondItem="8Wj-2K-DoA" secondAttribute="centerX" id="SCT-qQ-5cG"/>
+                            <constraint firstItem="yWk-Dh-pgj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WmL-d3-shx"/>
+                            <constraint firstItem="fT3-4s-toP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hAn-hn-Fbc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="svn-hL-s0y" secondAttribute="bottom" constant="108" id="usq-sE-SC3"/>
+                        </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="alertSpeedLabel" destination="8Wj-2K-DoA" id="nUg-XK-4yu"/>
+                        <outlet property="alertSpeedSlider" destination="svn-hL-s0y" id="bZD-aQ-vjM"/>
+                        <outlet property="speedLabel" destination="yWk-Dh-pgj" id="LMH-TY-WDl"/>
+                        <outlet property="statusLabel" destination="fT3-4s-toP" id="4dh-W1-Oim"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
